@@ -4,11 +4,11 @@ const cors = require('cors')
 const TelegramBot = require('node-telegram-bot-api');
 const userDataService = require('./service/userDataService');
 
-const port = 2700
+const port = process.env.PORT || '2700'
 
 
 
-const token = '5780598944:AAERIuvTw4KoStvP74XFQxG0RNAsa2sXE0U';
+const token = process.env.TOKEN;
 
 
 app.use(express.json())
